@@ -55,9 +55,9 @@ Written memories.
 But these are still primarily things we look at.
 They don't answer:
 "What if I could still talk to them?"
-That is the problem Still With You explores.****
+That is the problem Still With You explores.
 
-##💡The Solution
+## 💡 The Solution
 
 Still With You transforms preserved memories into an interactive conversational Legacy.
 Family members and people who knew someone can contribute memories, stories, experiences, advice, values, and personal details about them.
