@@ -19,7 +19,16 @@
 
 ---
 
-> **What if the memories, stories, values, and advice someone shared with you could remain accessible not as a generic chatbot, but as a private, memory grounded space built from what they actually left behind?**
+> **Still With You is an AI-powered digital legacy platform that allows people to continue meaningful conversations with someone they have lost by creating an AI experience grounded in that person's preserved memories, stories, values, experiences, and way of speaking.**
+ 
+>**Instead of simply storing memories as photos, documents, or notes, Still With You turns those memories into an interactive conversational experience.
+You can ask questions.
+You can talk about something that happened.
+You can ask for advice.
+You can revisit a story.
+You can simply say, "I miss you."
+The goal is not to replace the person.
+It is to create a way to continue the connection through what they left behind.**
 
 ## Submission Link
 
@@ -29,15 +38,31 @@
 
 ---
 
-## The Problem
-
-When someone we love is no longer around, what disappears isn't just their presence it's the small things: the stories they told, their advice, the phrases they used, the way they comforted people. Cloud storage preserves files. Chatbots generate conversation. Neither does **persistent, permission-aware personal memory**.
-
-**Still With You preserves the memories first, and lets AI communicate around them second.** The agent never invents a person's life it's grounded only in what was actually recorded.
+## ❤️ The Problem
+Losing someone we love creates a unique kind of absence.
+There are questions we never got to ask.
+Advice we wish we could hear one more time.
+Stories we wish we could revisit.
+Moments when we instinctively want to call them.
+And sometimes, the hardest part isn't forgetting their face or their voice it is losing the ability to have those small, everyday conversations.
+Traditional digital legacy solutions can preserve:
+Photos,
+Videos,
+Documents,
+Messages,
+Audio recordings,
+Written memories.
+But these are still primarily things we look at.
+They don't answer:
+"What if I could still talk to them?"
+That is the problem Still With You explores.****
 
 ## The Solution
 
-A person creates a private **Legacy Space** for themselves, shares real memories about their own life, and invites trusted people by email. Those people sign up on their own account and can then talk *to* the preserved legacy — with responses grounded in real, retrieved memory, not general AI knowledge.
+Still With You transforms preserved memories into an interactive conversational Legacy.
+Family members and people who knew someone can contribute memories, stories, experiences, advice, values, and personal details about them.
+The system builds a persistent memory layer from these contributions.
+Later, an authorized person can interact with that Legacy conversationally.
 
 ```
 Human memories → Persistent memory (CockroachDB) → Semantic retrieval → AI conversation → Grounded response
@@ -50,7 +75,7 @@ Human memories → Persistent memory (CockroachDB) → Semantic retrieval → AI
 - **Semantic retrieval** : a question doesn't need the exact words a memory used; CockroachDB's vector search finds what's *meant*, not just what's typed
 - **Family access** : the owner invites people by email + relationship; access is granted automatically the moment that person signs up
 - **Relationship-aware** : the interface reflects each visitor's actual relationship to the legacy (daughter, son, spouse, etc.)
-- **Owner vs. member separation** : the owner privately contributes memories; members converse with the legacy — two distinct modes on one shared memory layer
+- **Owner vs. member separation** : the owner privately contributes memories; members converse with the legacy two distinct modes on one shared memory layer
 
 ---
 
@@ -140,12 +165,12 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 
 ---
 
-## Judge Testing Flow
+## Testing Flow
 
 1. Open the [live demo](https://staging.d12jw6rtkbuyc8.amplifyapp.com)
 2. Create an account,this becomes your own Legacy
 3. Share a couple of memories about yourself in the chat box
-4. Sign out, sign back in — ask something related to what you shared, and see it retrieved and reflected in the response
+4. Sign out, sign back in, ask something related to what you shared, and see it retrieved and reflected in the response
 5. The point of the test: that memory is **persistent data in CockroachDB**, not something held only in the browser session
 
 ---
