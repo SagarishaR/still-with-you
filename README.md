@@ -45,12 +45,12 @@ Human memories → Persistent memory (CockroachDB) → Semantic retrieval → AI
 
 ## Features
 
-- **Legacy Space** — a dedicated, private space for one preserved person
-- **Memory preservation** — stories, values, advice, and everyday moments stored as persistent data, not chat history
-- **Semantic retrieval** — a question doesn't need the exact words a memory used; CockroachDB's vector search finds what's *meant*, not just what's typed
-- **Family access** — the owner invites people by email + relationship; access is granted automatically the moment that person signs up
-- **Relationship-aware** — the interface reflects each visitor's actual relationship to the legacy (daughter, son, spouse, etc.)
-- **Owner vs. member separation** — the owner privately contributes memories; members converse with the legacy — two distinct modes on one shared memory layer
+- **Legacy Space** : a dedicated, private space for one preserved person
+- **Memory preservation** : stories, values, advice, and everyday moments stored as persistent data, not chat history
+- **Semantic retrieval** : a question doesn't need the exact words a memory used; CockroachDB's vector search finds what's *meant*, not just what's typed
+- **Family access** : the owner invites people by email + relationship; access is granted automatically the moment that person signs up
+- **Relationship-aware** : the interface reflects each visitor's actual relationship to the legacy (daughter, son, spouse, etc.)
+- **Owner vs. member separation** : the owner privately contributes memories; members converse with the legacy — two distinct modes on one shared memory layer
 
 ---
 
