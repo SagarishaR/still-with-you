@@ -124,6 +124,7 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 ## Screenshots
 
 **Still With You, live** — the deployed application
+
 ![Live Demo](screenshots/signup.png)
 ![Live Demo](screenshots/demo.png)
 ![Live Demo](screenshots/demo1.png)
