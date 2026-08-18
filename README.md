@@ -170,7 +170,7 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 1. Open the [live demo](https://staging.d12jw6rtkbuyc8.amplifyapp.com)
 2. Create an account,this becomes your own Legacy
 3. Share a couple of memories about yourself in the chat box
-4. Sign out, sign back in, ask something related to what you shared, and see it retrieved and reflected in the response
+4. Sign out, sign up and sign back in (both sign up and sign in needed), ask something related to what you shared, and see it retrieved and reflected in the response
 5. The point of the test: that memory is **persistent data in CockroachDB**, not something held only in the browser session
 
 ---
