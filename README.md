@@ -13,13 +13,13 @@
 ![Distributed Vector Indexing](https://img.shields.io/badge/DISTRIBUTED%20VECTOR%20INDEXING-2FA84F?style=for-the-badge)
 ![Managed MCP Server](https://img.shields.io/badge/MANAGED%20MCP%20SERVER-E8813A?style=for-the-badge)
 
-**License: MIT** · Built for the **CockroachDB × AWS Hackathon — Build with Agentic Memory**
+**License: MIT** · Built for the **CockroachDB × AWS Hackathon : Build with Agentic Memory**
 
 </div>
 
 ---
 
-> **What if the memories, stories, values, and advice someone shared with you could remain accessible — not as a generic chatbot, but as a private, memory-grounded space built from what they actually left behind?**
+> **What if the memories, stories, values, and advice someone shared with you could remain accessible not as a generic chatbot, but as a private, memory grounded space built from what they actually left behind?**
 
 ## Submission Link
 
@@ -31,9 +31,9 @@
 
 ## The Problem
 
-When someone we love is no longer around, what disappears isn't just their presence — it's the small things: the stories they told, their advice, the phrases they used, the way they comforted people. Cloud storage preserves files. Chatbots generate conversation. Neither does **persistent, permission-aware personal memory**.
+When someone we love is no longer around, what disappears isn't just their presence it's the small things: the stories they told, their advice, the phrases they used, the way they comforted people. Cloud storage preserves files. Chatbots generate conversation. Neither does **persistent, permission-aware personal memory**.
 
-**Still With You preserves the memories first, and lets AI communicate around them second.** The agent never invents a person's life — it's grounded only in what was actually recorded.
+**Still With You preserves the memories first, and lets AI communicate around them second.** The agent never invents a person's life it's grounded only in what was actually recorded.
 
 ## The Solution
 
@@ -58,8 +58,8 @@ Human memories → Persistent memory (CockroachDB) → Semantic retrieval → AI
 
 | Tool | How it's used |
 |---|---|
-| **Distributed Vector Indexing** | Runtime — every memory is stored as a `VECTOR(768)` embedding with a real vector index. When someone asks a question, the app searches this index for semantically related memories before generating a response. This is the actual retrieval mechanism, not a demo feature. |
-| **Cloud Managed MCP Server** | Development-time — we connected Cline (an AI dev agent in VS Code) to our live cluster via `https://cockroachlabs.cloud/mcp`, authenticated by OAuth, read-only. Used to inspect the live schema, confirm the vector index was configured correctly, and verify memory data was actually persisting as the app ran. |
+| **Distributed Vector Indexing** | Runtime  every memory is stored as a `VECTOR(768)` embedding with a real vector index. When someone asks a question, the app searches this index for semantically related memories before generating a response. This is the actual retrieval mechanism, not a demo feature. |
+| **Cloud Managed MCP Server** | Development time  we connected Cline (an AI dev agent in VS Code) to our live cluster via `https://cockroachlabs.cloud/mcp`, authenticated by OAuth, read-only. Used to inspect the live schema, confirm the vector index was configured correctly, and verify memory data was actually persisting as the app ran. |
 
 **Runtime retrieval flow:**
 ```
@@ -77,7 +77,7 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 
 | Service | How it's used |
 |---|---|
-| **AWS Lambda** | Runs the entire backend — auth, memory capture, chat, family access — as a serverless function, called by the frontend via a public Function URL. |
+| **AWS Lambda** | Runs the entire backend  auth, memory capture, chat, family access as a serverless function, called by the frontend via a public Function URL. |
 | **AWS Amplify** | Hosts the public frontend at the live demo link above. |
 
 ---
@@ -123,7 +123,7 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 
 ## Screenshots
 
-**Still With You, live** - the deployed application
+**Still With You, live** : The deployed application
 
 ![Live Demo](screenshots/signup.png)
 
@@ -132,10 +132,10 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 ![Live Demo](screenshots/demo_0.png)
 ![Live Demo](screenshots/demo1.png)
 
-**CockroachDB Managed MCP Server** — Cline connected to the live cluster
+**CockroachDB Managed MCP Server** : Cline connected to the live cluster
 ![MCP Server](screenshots/cockroachdb-mcp.png)
 
-**CockroachDB Vector Memory** — the vector column and index powering retrieval
+**CockroachDB Vector Memory** : The vector column and index powering retrieval
 ![Vector Memory](screenshots/cockroachdb-vector-memory.png)
 
 ---
@@ -143,7 +143,7 @@ Cline (AI agent) → MCP → CockroachDB Cloud cluster → schema / data verific
 ## Judge Testing Flow
 
 1. Open the [live demo](https://staging.d12jw6rtkbuyc8.amplifyapp.com)
-2. Create an account — this becomes your own Legacy
+2. Create an account,this becomes your own Legacy
 3. Share a couple of memories about yourself in the chat box
 4. Sign out, sign back in — ask something related to what you shared, and see it retrieved and reflected in the response
 5. The point of the test: that memory is **persistent data in CockroachDB**, not something held only in the browser session
@@ -158,7 +158,7 @@ cd still-with-you
 npm install
 ```
 
-Create `.env.local` (never committed):
+Create `.env.local`:
 ```
 GROQ_API_KEY=
 GEMINI_API_KEY=
@@ -194,6 +194,6 @@ still-with-you/
 
 **The database remembers. The AI communicates.**
 
-Built for the CockroachDB × AWS Hackathon — Build with Agentic Memory
+Built for the CockroachDB × AWS Hackathon : Build with Agentic Memory
 
 
