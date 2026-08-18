@@ -54,7 +54,7 @@ Human memories → Persistent memory (CockroachDB) → Semantic retrieval → AI
 
 ---
 
-## CockroachDB Tools Used *(2 required)*
+## CockroachDB Tools Used 
 
 | Tool | How it's used |
 |---|---|
